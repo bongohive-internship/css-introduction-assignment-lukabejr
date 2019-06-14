@@ -1,0 +1,149 @@
+/*Code for the navigation bar starts here*/
+.topnav{
+  background-color: #333;
+  overflow:hidden;
+  width: 100%;
+}
+.topnav a{
+  position : relative;
+  color: #f2f2f2;
+  text-align:center;
+  padding: 1px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover{
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active{
+  background-color: #4CAF50;
+  color: white;
+}
+/*Code for the navigation bar ends here*/
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+/*Code for the font ends here */
+@font-face {
+  font-family: "TerminalDosis";
+  src: url("../fonts/TerminalDosis-ExtraLight.ttf");
+}
+/*Code for the font ends here */
+/*Code for the page formatting starts here partially*/
+body {
+  padding-bottom: 40px;
+  background-color: silver;
+  align-items: center;
+  
+}
+#overall {
+  margin: 0px 150px 0px 150px;
+  box-shadow: 0 4px 60px 0 rgba(0,0,0,0.5);
+  align-items: center;
+  background-color: white;
+}
+/*Code for the page formatting ends here partially*/
+/*Code for the header and footer starts here*/
+.header, .footer{
+  width: 100%;
+  background: #333;
+  padding: 10px 0;
+  color: #fff;
+  background-image: url(../images/new-bloom.png);
+}
+.header{
+  position: sticky;
+  top: 0;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+}
+/*Code for the header and footer starts here*/
+
+/*Code for the text formating starts here*/
+h1{
+  font-size: 40px;
+  text-align: center;
+}
+p {
+  font-family: TerminalDosis,monospace;
+  font-size: 12px;
+  line-height: 1;
+  color: rgb(0,0,0);
+
+}
+p:hover {
+  font-size: 30px;
+}
+a:hover {
+  width: 100%;
+}
+.medium {
+  font-size: 15px;
+}
+
+.large {
+  font-size: 20px;
+}
+/*Code for the text formating ends here*/
+/*Code for the column cards starts here*/
+.column {
+
+  width: 100%;
+  padding: 0 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card{
+  margin: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  padding: 10px 0px 10px 0px;
+  border-width: thick;
+  border-radius: 20%;
+  text-align: center;
+  background-color: #f1f1f1;
+
+}
+
+
+@media screen and (max-width: 600px){
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/*Code for the column cards ends here*/
+/*Code for the picture formatting starts here */
+#fractal {
+
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  width: 50vh;
+
+}
+#bloom {
+  height: 50vh;
+  border-radius: 30%;
+}
+
+#asylum {
+  height: 50vh;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+#doctor {
+  height: 80vh;
+  width: 100%;
+}
+/*Code for the picture formatting starts here */
